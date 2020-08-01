@@ -16,15 +16,15 @@ function statusPage()					// Create function to build Statuspage Component conte
 				newContent += '<img src="https://raw.githubusercontent.com/pnvnd/simple-statuspage/master/img/' + responseObject.components[i].name + '.png" width="75" height="75" />';
 				newContent += '<p><b>' + responseObject.components[i].name + '</b><br>';
 				if ( responseObject.components[i].status == "operational" ) {
-					newContent += '<b class="fas fa-check-circle" style="color: #2FCC66">operational</b>';
+					newContent += '<i class="fas fa-check-circle" style="color: #2FCC66;"> operational</i>';
 				} else if ( responseObject.components[i].status == "degraded_performance" ) {
-					newContent += '<b class="fas fa-minus-circle" style="color: #F1C40F">degraded performance</b>';
+					newContent += '<i class="fas fa-minus-circle" style="color: #F1C40F"> degraded performance</i>';
 				} else if ( responseObject.components[i].status == "partial_outage" ) {
-					newContent += '<b class="fas fa-exclamation-circle" style="color: #E67E22">partial outage</b>';
+					newContent += '<i class="fas fa-exclamation-circle" style="color: #E67E22"> partial outage</i>';
 				} else if ( responseObject.components[i].status == "major_outage" ) {
-					newContent += '<b class="fas fa-times-circle" style="color: #E74C3C">major outage</b>';
+					newContent += '<i class="fas fa-times-circle" style="color: #E74C3C"> major outage</i>';
 				} else {
-					newContent += '<b class="fas fa-cog" style="color: #3498DB">under maintenance</b>';
+					newContent += '<i class="fas fa-cog" style="color: #3498DB"> under maintenance</i>';
 			}
 			newContent += '</div>';
 		}
