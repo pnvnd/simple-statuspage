@@ -13,7 +13,7 @@ function statusPage()					// Create function to build Statuspage Component conte
 		for (var i = 0; i < responseObject.components.length; i++) {			// Loop through object
 			if ( responseObject.components[i].group == true && responseObject.components[i].name !== "SUPPORT : US" && responseObject.components[i].name !== "SUPPORT : Europe") {
 				newContent += '<div class="event">';
-				newContent += '<img src="img/' + responseObject.components[i].name + '.png" />';
+				newContent += '<img src="https://raw.githubusercontent.com/pnvnd/simple-statuspage/master/img/' + responseObject.components[i].name + '.png" />';
 				newContent += '<p><b>' + responseObject.components[i].name + '</b><br>';
 				if ( responseObject.components[i].status == "operational" ) {
 					newContent += '<b class="ticons ticons-check_circle" style="color: #2FCC66">operational</b>';
