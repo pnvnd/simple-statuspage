@@ -35,7 +35,7 @@ function statusPage()					// Create function to build Statuspage Component conte
 	}
 };
 
-xhr.open('GET', 'https://nwg5xmnm9d17.statuspage.io/api/v2/components.json', true);			// Prepare the request
+xhr.open('GET', 'https://4v6r9bp6f4d6.statuspage.io/api/v2/components.json', true);			// Prepare the request
 xhr.send(null);                                 // Send the request
 }
 
