@@ -7,7 +7,11 @@ body {
   background-color: #666;
   color: #fff;
   font-family: 'Open Sans', arial, sans-serif;
-  width: 88%;
+  margin: 0;
+}
+
+.wrapper {
+  width: 80%;
   margin: 0 auto 0 auto;
 }
 
@@ -29,6 +33,45 @@ footer {
   height: 200px;
   margin-top: -200px;
 }
+
+
+/* Top Navigation Bar Start */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #2FCC66;
+}
+
+/* Top Navigation Bar End */
+
 
 h1 {
   font-size: 2.4em;
@@ -65,37 +108,8 @@ a {
   border: 0px solid #999;
 }
 
-/* Top Navigation Bar */
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+#content {
+  align: center;
 }
+  
 
-li {
-  float: left;
-  border-right:1px solid #bbb;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #2FCC66;
-}
