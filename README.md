@@ -1,5 +1,5 @@
 # simple-statuspage
- Simple Statuspage using pageId from statuspage.io to show status of component groups.
+Simple Statuspage using pageId from statuspage.io to show status of component groups.
 
 ## Instructions
 Get the pageID from your statuspage.io API page and replace in `js/statuspage.js`.  The API URL looks like `https://pageId.statuspage.io/api/v2/components.json`
