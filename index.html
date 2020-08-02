@@ -7,31 +7,39 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="fontawesome/css/all.css" />
   <script src="js/dark-mode.js"></script>
+  <script src="js/clock.js"></script>
 </head>
 
-<body>
+<body onload="startTime()">
+
+<ul>
+  <li><a class="active" href="#home">Datacrunch</a></li>
+  <li><a id="date"></a></li>
+  <li><a id="clock"></a></li>
+  <li style="float:right"><a onclick="dark()"><i class="fas fa-adjust"></i></a></li>
+</ul>
 
 <header>
   <h1>Statuspage</h1>
 </header>
 
-<button onclick="dark()">Toggle dark mode</button>
 
 <h2>Statuspage Example Component Groups</h2>
 
 <script src="js/statuspage.js"></script>
 <section id="content"></section>
 
-<div>
+
+<footer>
 <hr />
-<center>
+
   <i class="fas fa-check-circle" style="color: #2FCC66"> operational</i> |
   <i class="fas fa-minus-circle" style="color: #F1C40F"> degraded performance</i> |
   <i class="fas fa-exclamation-circle" style="color: #E67E22"> partial outage</i> |
   <i class="fas fa-times-circle" style="color: #E74C3C"> major outage</i> |
   <i class="fas fa-cog" style="color: #3498DB"> under maintenance</i>
-</center>
-</div>
+
+</footer>
 
 <script src="https://4v6r9bp6f4d6.statuspage.io/embed/script.js"></script>
 
