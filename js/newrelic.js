@@ -22,9 +22,6 @@ NREUM.info = {
   sa: 1
 };
 
-newrelic.setCustomAttribute("team", "datacrunch");
-newrelic.setCustomAttribute("appid", "APP-12345");
-
 (() => {
   "use strict";
   var e,
@@ -2270,3 +2267,6 @@ newrelic.setCustomAttribute("appid", "APP-12345");
   })(),
     (window.NRBA = o);
 })();
+
+newrelic.setCustomAttribute("team", "datacrunch");
+newrelic.setCustomAttribute("appid", "APP-12345");
