@@ -22,6 +22,9 @@ NREUM.info = {
   sa: 1
 };
 
+newrelic.setCustomAttribute("team", "datacrunch");
+newrelic.setCustomAttribute("appid", "APP-12345");
+
 (() => {
   "use strict";
   var e,
