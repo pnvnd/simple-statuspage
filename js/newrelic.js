@@ -10,14 +10,14 @@ NREUM.loader_config = {
   accountID: "3844837",
   trustKey: "3844837",
   agentID: "1588826492",
-  licenseKey: "NRJS-2820f9c1cd712b7099c",
+  licenseKey: "NRBR-6efc6ec172b803c8e7a",
   applicationID: "1588826492"
 };
 
 NREUM.info = {
   beacon: "bam.nr-data.net",
   errorBeacon: "bam.nr-data.net",
-  licenseKey: "NRJS-2820f9c1cd712b7099c",
+  licenseKey: "NRBR-6efc6ec172b803c8e7a",
   applicationID: "1588826492",
   sa: 1
 };
