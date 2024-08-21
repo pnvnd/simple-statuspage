@@ -50,7 +50,6 @@ function statusPage()
 
 //Reload JSON data every 60 seconds
 statusPage();
-newrelic.log('StatusPage Loaded', {level: 'debug', customAttributes: {myFavoriteApp: true}});
 setInterval(statusPage, 60000);
 
 // When working locally in Firefox, you may see an error saying that the JSON is not well-formed.
