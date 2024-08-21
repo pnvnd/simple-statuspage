@@ -23,6 +23,7 @@ function startTime() {
     document.getElementById("date").innerHTML = date;
     
     var time = setTimeout(function(){ startTime() }, 500);
+    newrelic.log('Clock started', { level: 'debug', customAttributes: { appName: 'simple-statuspage' } });
 }
 
 function checkTime(i) {

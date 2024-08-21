@@ -11,6 +11,7 @@ function statusPage()
 
 		// If server status was ok
 		if(xhr.status === 200) {
+			newrelic.log('StatusPage data retrieved', { level: 'debug', customAttributes: { appName: 'simple-statuspage' } });
 			responseObject = JSON.parse(xhr.responseText);
 
 			// BUILD UP STRING WITH NEW CONTENT (could also use DOM manipulation)
