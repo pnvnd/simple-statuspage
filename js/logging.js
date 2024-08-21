@@ -1,3 +1,3 @@
 function logging() {
-    window.newrelic.log('StatusPage Loaded', { level: 'debug', customAttributes: { myFavoriteApp: true } });
+    newrelic.log('StatusPage Loaded from logging.js', { level: 'debug', customAttributes: { myFavoriteApp: true } });
 }
