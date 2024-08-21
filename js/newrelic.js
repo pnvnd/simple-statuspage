@@ -6,4 +6,3 @@
 
 ;newrelic.setCustomAttribute("team", "datacrunch");
 ;newrelic.setCustomAttribute("appid", "APP-12345");
-;window.newrelic.log('StatusPage Loaded', {level: 'debug', customAttributes: {myFavoriteApp: true}});
